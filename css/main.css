@@ -1,0 +1,35 @@
+#appleMagnet:hover
+{
+    color: #fff;
+    background-color: #39c;
+}
+#appleMagnet{
+	border-radius: 0px;
+	font-family: Montserrat;
+    width: 265px;
+    margin: 40px 3px;
+    padding: 0;
+    border: 0;
+    background-color: #fff;
+    display: inline-block;
+    float: left;
+}
+
+#playMagnet:hover
+{
+    color: #fff;
+    background-color: #C9C;
+}
+
+#playMagnet{
+	border-radius: 0px;
+	font-family: Montserrat;
+    width: 265px;
+    margin: 40px 3px;
+    padding: 0;
+    border: 0;
+    background-color: #fff;
+    color:#C9C;
+    display: inline-block;
+    float: right;
+}
