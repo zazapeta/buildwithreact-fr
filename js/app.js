@@ -3,11 +3,11 @@ var _DIR = {
 	"images" : "images/"
 }
 var _APP = {
-	"title" : "Cook me ♥"
+	"title" : "Créer avec React"
 }
 var _ASSET = {
-	"main_logo" : _DIR["images"] + "logo.jpg",
-	"main_logo_alt" : "brand_logo",
+	"main_logo" : _DIR["images"] + "logo.png",
+	"main_logo_alt" : "reactJs_banner",
 
 	"background" : _DIR["images"] + "bg_filter.jpg",
 	"background_alt" : "background_img",
@@ -53,7 +53,7 @@ class Menu extends React.Component {
 			  <ReactBootstrap.Navbar fixedTop className={"alert-warning"}>
 			    <ReactBootstrap.Navbar.Header>
 			      <ReactBootstrap.Navbar.Brand>
-			        <a href="#search">{_APP["title"]}</a>
+			        <a href="/">{_APP["title"]}</a>
 			        {/* <a href="#"><Logo src={_ASSET["main_logo"]} alt={_ASSET["main_logo_alt"]}></Logo></a> */} 
 			      </ReactBootstrap.Navbar.Brand>
 			      <ReactBootstrap.Navbar.Toggle />
@@ -73,9 +73,9 @@ class Menu extends React.Component {
 			      </ReactBootstrap.Nav>
 			      */}  
 			      <ReactBootstrap.Nav pullRight>
-			        <ReactBootstrap.NavItem eventKey={1} href="#">About</ReactBootstrap.NavItem>
-			        <ReactBootstrap.NavItem eventKey={2} href="http://sami.ghazouane.io/blog" target="_blank">Blog</ReactBootstrap.NavItem>
-			        <ReactBootstrap.NavItem eventKey={3} href="http://sami.ghazouane.io" target="_blank">Author</ReactBootstrap.NavItem>
+			        <ReactBootstrap.NavItem eventKey={1} href="/articles">Articles</ReactBootstrap.NavItem>
+			        <ReactBootstrap.NavItem eventKey={2} href="/tutoriel">Tutoriel</ReactBootstrap.NavItem>
+			        <ReactBootstrap.NavItem eventKey={3} href="/">About</ReactBootstrap.NavItem>
 			      </ReactBootstrap.Nav>
 			    </ReactBootstrap.Navbar.Collapse>
 			  </ReactBootstrap.Navbar>
@@ -212,7 +212,6 @@ class AppBody extends React.Component {
 	render() {
 		// var full = " position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:1;"
 		var _styleBG = {
-			background : "url('" + _ASSET["background"] + "')",
 			position : "fixed",
 			top : "0px",
 			bottom : "0px",
@@ -236,9 +235,9 @@ class AppBody extends React.Component {
 				<div style={_styleBG}>
 
 					<div style={{margin : "25%"}}>
-						<MainInput id="search"></MainInput>
+						{/*<MainInput id="search"></MainInput>
 						<MagnetApple/>
-						<MagnetPlay/>
+						<MagnetPlay/>*/}
 					</div>
 				{/*	<div style={_styleMask}></div>
 				
@@ -295,9 +294,9 @@ class Footer extends React.Component {
 
 				<section className="main-footer alert-warning" style={_styleFoo}>
 				<div className="container">
-					<p style={_styleP}>© 2015 cookme.com</p>
-					<a style={_styleP} href="#search" className="up"><ReactBootstrap.Glyphicon glyph="home" /></a>
-					<p style={_styleP}> Powered with ♥ by <a href="https://facebook.github.io/react/">React.js</a></p>
+					<p style={_styleP}> Fait avec <a href="https://facebook.github.io/react/" target="_blank">♥</a>  </p>
+					<a style={_styleP} href="#" className="up"><ReactBootstrap.Glyphicon glyph="home" /></a>
+					<p style={_styleP}>Inspiré de <a href="http://buildwithreact.com/" target="_blank">buildwithreact.com</a></p>				
 				</div>
 				</section>
 
